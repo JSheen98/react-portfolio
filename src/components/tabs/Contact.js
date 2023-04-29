@@ -78,7 +78,9 @@ export default function Contact() {
     }
 
     return (
-        <form className="ms-4 me-4 mb-4" style={styles.body}>
+        <section style={styles.body}>
+        <h1 className="ms-4 mb-4">Contact</h1>
+        <form className="ms-4 me-4 mb-4">
             <div className="form-group">
                 <label for="nameInput">Name</label>
                 <input 
@@ -89,7 +91,7 @@ export default function Contact() {
                 placeholder="i.e. John Doe" 
                 />
                 {invalidName && (
-                <div className="invalid-feedback" style={styles.invalid}>
+                <div style={styles.invalid}>
                     {invalidName}
                 </div>
                 )}
@@ -104,9 +106,9 @@ export default function Contact() {
                 placeholder="i.e. name@example.com" 
                 />
                 {invalidEmail && (
-                <div className="invalid-feedback" style={styles.invalid}>
+                <div style={styles.invalid}>
                     {invalidEmail}
-                </div>
+                </div> 
                 )}
             </div>
             <div className="form-group mt-4">
@@ -119,7 +121,7 @@ export default function Contact() {
                 >
                 </textarea>
                 {invalidMessage && (
-                <div className="invalid-feedback" style={styles.invalid}>
+                <div style={styles.invalid}>
                     {invalidMessage}
                 </div>
                 )}
@@ -129,10 +131,11 @@ export default function Contact() {
             onSubmit={handleFormSubmit} 
             style={styles.btn}>Submit</button>
             {validMessage && (
-                <div className="valid-input mt-4" style={styles.valid}>
+                <div className="mt-4" style={styles.valid}>
                 {validMessage}
                 </div>
             )}
         </form>
+        </section>
     )
 }
