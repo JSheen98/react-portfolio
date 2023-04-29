@@ -6,10 +6,14 @@ const styles = {
   }
 }
 
-export default function Project() {
+function ProjectCard() {
+  
+}
+
+export default function Portfolio() {
   return (
       <section style={styles.body}>
-          <p>This is the Project section</p>
+          
       </section>
   )
 }

@@ -3,7 +3,7 @@ import Navigation from './components/Navigation'
 import React, { useState } from 'react'
 import Home from './components/tabs/Home'
 import Contact from './components/tabs/Contact'
-import Projects from './components/tabs/Projects'
+import Portfolio from './components/tabs/Portfolio'
 import Resume from './components/tabs/Resume'
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
       if (currentTab === 'Contact') {
           return <Contact/>
       }
-      if (currentTab === 'Projects') {
-          return <Projects/>
+      if (currentTab === 'Portfolio') {
+          return <Portfolio/>
       }
       return <Resume/>     
   }
@@ -30,7 +30,7 @@ function App() {
     <div>
       <Navigation currentTab={currentTab} handleTabChange={handleTabChange} />
       {renderTab()}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

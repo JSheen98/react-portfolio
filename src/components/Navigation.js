@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import './styles/Navbar.css'
 
 // Header component
 function Header() {
     return (
-        <h1 className="header-name">Jackson Sheen | Fullstack Web Developer</h1>    
+        <h1 className="header-name">Jackson Sheen | Fullstack Web Developer</h1>
     );
 }
 
@@ -44,41 +44,45 @@ export default function Navigation({ currentTab, handleTabChange }) {
             {/* sets the state of the side menu to false so it doesn't show
             unless the screen size is smaller than 500px*/}
             {(toggleMenu || screenWidth > 500) && (
-            <ul className="list $zindex-tooltip">
-                <li className="items">
-                    <a 
-                    href="#home"
-                    // when clicked, change the tab to 'Home'
-                    onClick={() => handleTabChange('Home') && toggleMenu}
-                    // If the tab is selected, give the nav-link-active class style
-                    className={currentTab === 'Home' ? 'nav-link-active' : 'nav-link'}
-                    >
-                        Home
-                    </a>
-                </li>
-                <li className="items">
-                    <a href="#portfolio"
-                    // when clicked, change the tab to 'Home'
-                    onClick={() => handleTabChange('Portfolio')}
-                    // If the tab is selected, give the nav-link-active class style
-                    className={currentTab === 'Portfolio' ? 'nav-link-active' : 'nav-link'}
-                    >Portfolio</a>
-                </li>
-                <li className="items">
-                    <a href="#contact"
-                    onClick={() => handleTabChange('Contact')}
-                    className={currentTab === 'Contact' ? 'nav-link-active' : 'nav-link'}
-                    >Contact</a>
-                </li>
-                <li className="items">
-                    <a href="#resume"
-                    onClick={() => handleTabChange('Resume')}
-                    className={currentTab === 'Resume' ? 'nav-link-active' : 'nav-link'}
-                    >Resume</a>
-                </li>
-            </ul>
+                <ul className="list">
+                    <li className="items">
+                        <a
+                            href="#home"
+                            // when clicked, change the tab to 'Home'
+                            onClick={() => handleTabChange('Home') && toggleMenu}
+                            // If the tab is selected, give the nav-link-active class style
+                            className={currentTab === 'Home' ? 'nav-link-active' : 'nav-link'}
+                        >
+                            Home
+                        </a>
+                    </li>
+                    <li className="items">
+                        <a href="#portfolio"
+                            onClick={() => handleTabChange('Portfolio')}
+                            className={currentTab === 'Portfolio' ? 'nav-link-active' : 'nav-link'}
+                        >
+                            Portfolio
+                        </a>
+                    </li>
+                    <li className="items">
+                        <a href="#contact"
+                            onClick={() => handleTabChange('Contact')}
+                            className={currentTab === 'Contact' ? 'nav-link-active' : 'nav-link'}
+                        >
+                            Contact
+                        </a>
+                    </li>
+                    <li className="items">
+                        <a href="#resume"
+                            onClick={() => handleTabChange('Resume')}
+                            className={currentTab === 'Resume' ? 'nav-link-active' : 'nav-link'}
+                        >
+                            Resume
+                        </a>
+                    </li>
+                </ul>
             )}
-            
+
             {/* Call the toggleNav function from above on each click */}
             <button onClick={toggleNav} className="side-menu">☰</button>
         </nav>
