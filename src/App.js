@@ -12,16 +12,16 @@ function App() {
 
   // Render the tab based on the state of currentTab
   const renderTab = () => {
-      if (currentTab === 'Home') {
-          return <Home/>
-      }
-      if (currentTab === 'Contact') {
-          return <Contact/>
-      }
-      if (currentTab === 'Portfolio') {
-          return <Portfolio/>
-      }
-      return <Resume/>     
+    if (currentTab === 'Home') {
+      return <Home />
+    }
+    if (currentTab === 'Portfolio') {
+      return <Portfolio />
+    }
+    if (currentTab === 'Contact') {
+      return <Contact />
+    }
+    return <Resume />
   }
 
   const handleTabChange = (tab) => setCurrentTab(tab)
@@ -30,7 +30,7 @@ function App() {
     <div>
       <Navigation currentTab={currentTab} handleTabChange={handleTabChange} />
       {renderTab()}
-      <Footer/>
+      <Footer />
     </div>
   );
 }
