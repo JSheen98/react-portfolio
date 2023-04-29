@@ -99,13 +99,17 @@ const socialNetworkApi = {
 // For each project card, we're calling in a different set of properties from the objects above
 export default function Portfolio() {
   return (
-    <section style={styles.body} className="mb-4 d-flex flex-wrap justify-content-around">
+    <section style={styles.body} className="mb-4">
+      <h1 className="ms-4 mb-4">Portfolio</h1>
+      <div className="d-flex flex-wrap justify-content-around">
       <ProjectCard description={musinion.description} title={musinion.title} image={musinion.image} gitHub={musinion.gitHub} liveSite={musinion.liveSite} />
       <ProjectCard description={techBlog.description} title={techBlog.title} image={techBlog.image} gitHub={techBlog.gitHub} liveSite={techBlog.liveSite} />
       <ProjectCard description={weatherDashboard.description} title={weatherDashboard.title} image={weatherDashboard.image} gitHub={weatherDashboard.gitHub} liveSite={weatherDashboard.liveSite} />
       <ProjectCard description={movieRecommender.description} title={movieRecommender.title} image={movieRecommender.image} gitHub={movieRecommender.gitHub} liveSite={movieRecommender.liveSite} />
       <ProjectCard description={svgGenerator.description} title={svgGenerator.title} image={svgGenerator.image} gitHub={svgGenerator.gitHub} liveSite={svgGenerator.liveSite} />
       <ProjectCard description={socialNetworkApi.description} title={socialNetworkApi.title} image={socialNetworkApi.image} gitHub={socialNetworkApi.gitHub} liveSite={socialNetworkApi.liveSite} />
+      </div>
     </section>
+    
   )
 }
