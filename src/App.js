@@ -24,6 +24,7 @@ function App() {
     return <Resume />
   }
 
+  // Sets the chosen tab to the current tab
   const handleTabChange = (tab) => setCurrentTab(tab)
 
   return (
