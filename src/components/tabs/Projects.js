@@ -1,7 +1,15 @@
 import React from "react";
 
-export default function Project() {
-    return (
-      <h1>This is a Project!</h1>
-    );
+const styles = {
+  body: {
+      marginTop: '130px'
   }
+}
+
+export default function Project() {
+  return (
+      <section style={styles.body}>
+          <p>This is the Project section</p>
+      </section>
+  )
+}

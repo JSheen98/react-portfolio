@@ -37,6 +37,10 @@ nav {
     cursor: pointer;
 }
 
+.items:hover {
+    color: var(--davysgray);
+}
+
 .side-menu {
     display: none;
     position: absolute;
