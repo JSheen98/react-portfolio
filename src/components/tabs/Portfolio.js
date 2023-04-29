@@ -73,7 +73,7 @@ const weatherDashboard = {
 }
 
 const movieRecommender = {
-  title: 'Movie Recommender',
+  title: '🎞️ Movie Recommender',
   description: 'This website is a team project that features a frontend movie dashboard that allows a user to search and filter for movies using the TMDb API, then a user can search for nearby theaters using the Google Maps API.',
   image: movieRecommenderImg,
   gitHub: 'https://github.com/JSheen98/coding-bootcamp-project1-movie-recommender',
