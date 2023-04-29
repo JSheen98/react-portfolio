@@ -1,3 +1,4 @@
+/* Colors to use throughout */
 :root {
     --moonstone: #5BADBF;
     --davysgray: #5D5E60;
@@ -9,18 +10,21 @@
     border: 0 !important;
 }
 
+/* Container for card overlays */
 .overlay-container {
     position: relative;
     width: 100%;
 }
 
+/* Image styling */
 .img-size {
     width: 100%;
-    height: 18vw;
+    height: 350px;
     object-fit: cover;
     object-position: top left;
 }
 
+/* Overlay properties */
 .overlay {
     position: absolute;
     border-top-left-radius: 1%;
@@ -34,11 +38,13 @@
     background-color: var(--outerspace);
 }
 
+/* Makes the overlay appear on hover (when the container is hovered) */
 .overlay-container:hover .overlay {
     opacity: .95;
     border: 0;
 }
 
+/* Styling for title on the overlay */
 .title {
     color: var(--celeste);
     font-size: 25px;
@@ -51,6 +57,7 @@
     text-align: center;
 }
 
+/* Styling for description on the overlay */
 .description {
     color: var(--celeste);
     font-size: 15px;
@@ -63,11 +70,13 @@
     text-align: center;
 }
 
+/* Card footer styling */
 .card-footer {
     background-color: var(--celeste);
     border: 0;
 }
 
+/* Styling for 'click to view app' prompt on overlay */
 .live {
     color: var(--moonstone);
     font-weight: bold;
@@ -81,6 +90,7 @@
     text-align: center; 
 }
 
+/* Removes the overlay on smaller screen sizes */
 @media screen and (max-width: 1200px) {
     .title, .description {
         display: none;

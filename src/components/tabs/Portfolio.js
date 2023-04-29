@@ -7,6 +7,7 @@ import svgGeneratorImg from '../images/svg-logo-generator.png'
 import socialNetworkApiImg from '../images/social-network-api.png'
 import '../styles/Portfolio.css'
 
+// Styling
 const styles = {
   body: {
     marginTop: '130px',
@@ -18,15 +19,20 @@ const styles = {
   btn: {
     background: '#5D5E60',
     color: '#B9FAF8'
+  },
+  cardFooter: {
+    backgroundColor: '#5BADBF'
   }
 }
 
+// Project card component with props
 function ProjectCard(props) {
   return (
     <div className="card mb-4 me-2 ms-2" style={styles.card}>
       <div class="overlay-container">
         <a href={props.liveSite}>
           <img className="card-img-top img-size" href={props.liveSite} src={props.image} alt="Test" />
+          {/* Overlay that appears on hover of overlay container (surrounds the image) */}
           <div class="overlay">
             <div class="title">{props.title}</div>
             <div class="description">{props.description}</div>
@@ -34,13 +40,14 @@ function ProjectCard(props) {
           </div>
         </a>
       </div>
-      <div className="card-body align-items-center d-flex flex-column card-footer" style={styles.gray}>
+      <div className="card-body align-items-center d-flex flex-column card-footer" style={styles.cardFooter}>
         <a href={props.gitHub} className="btn" style={styles.btn}>GitHub</a>
       </div>
     </div>
   )
 }
 
+// Objects to pass into the Component's props below
 const musinion = {
   title: 'Musinion',
   description: "This team project is a full stack website for creating your personal album reviews, as well as, viewing and responding to other user's reviews.",
@@ -89,6 +96,7 @@ const socialNetworkApi = {
   liveSite: 'https://github.com/JSheen98/social-network-api'
 }
 
+// For each project card, we're calling in a different set of properties from the objects above
 export default function Portfolio() {
   return (
     <section style={styles.body} className="mb-4 d-flex flex-wrap justify-content-around">

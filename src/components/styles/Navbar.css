@@ -1,3 +1,4 @@
+/* Colors to use throughout */
 :root {
     --moonstone: #5BADBF;
     --davysgray: #5D5E60;
@@ -5,15 +6,18 @@
     --outerspace: #36413E;
 }
 
+/* Color the background of the page */
 html {
     background-color: var(--davysgray);
 }
 
+/* Header styling */
 .header-name {
     text-align: center;
     color: var(--celeste);
 }
 
+/* Nav styling */
 nav {
     z-index: 1;
     position: fixed;
@@ -22,6 +26,7 @@ nav {
     background-color: var(--moonstone);
 }
 
+/* list styling and positioning */
 .list {
     list-style-type: none;
     background-color: var(--moonstone);
@@ -31,6 +36,7 @@ nav {
     position: relative;
 }
 
+/* Nav item styling */
 .items {
     margin-right: 20px;
     font-size: 20px;
@@ -38,14 +44,16 @@ nav {
     cursor: pointer;
 }
 
+/* Hover effect when items are hovered */
 .items:hover {
     color: var(--davysgray);
 }
 
+/* Side menu styling (for mobile screens) */
 .side-menu {
     display: none;
     position: absolute;
-    background: none;
+    background: var(--davysgray);
     right: 10px;
     font-weight: bold;
     width: 40px;
@@ -57,6 +65,7 @@ nav {
     border-radius: 10%;
 }
 
+/* Media queries */
 @media screen and (max-width: 500px) {
     .list {
         flex-direction: column;
