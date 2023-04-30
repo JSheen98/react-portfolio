@@ -91,12 +91,28 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center; 
+    text-align: center;
+}
+
+.profile-photo {
+    border-radius: 10%;
+    width: 25%;
 }
 
 /* Removes the overlay on smaller screen sizes */
 @media screen and (max-width: 1200px) {
-    .title, .description {
+    .title,
+    .description {
         display: none;
-    }   
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        width: 50%;
+    }
 }
