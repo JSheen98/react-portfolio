@@ -16,10 +16,6 @@
     width: 100%;
 }
 
-.btn:hover {
-    background-color: var(--moonstone);
-}
-
 /* Image styling */
 .img-size {
     width: 100%;
@@ -105,6 +101,7 @@
     background: var(--davysgray);
 }
 
+/* Media Queries */
 /* Removes the overlay on smaller screen sizes */
 @media screen and (max-width: 1200px) {
     .title,
