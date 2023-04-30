@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.84855d87.css",
-    "main.js": "/react-portfolio/static/js/main.7032f67d.js",
+    "main.css": "/react-portfolio/static/css/main.6f0bb4c3.css",
+    "main.js": "/react-portfolio/static/js/main.5b3d040b.js",
     "static/media/musinion-home-2.png": "/react-portfolio/static/media/musinion-home-2.709d7287c1a9208ad03c.png",
     "static/media/weather-dashboard-ex.png": "/react-portfolio/static/media/weather-dashboard-ex.394e8c19aa0a9c8a6e62.png",
     "static/media/movie-recommender-ss.jpg": "/react-portfolio/static/media/movie-recommender-ss.1abc609369af5efafbe7.jpg",
@@ -11,11 +11,11 @@
     "static/media/home-screen.png": "/react-portfolio/static/media/home-screen.229e2b3ed2da1e797a23.png",
     "static/media/svg-logo-generator.png": "/react-portfolio/static/media/svg-logo-generator.0b81d0bd751450fc39e6.png",
     "index.html": "/react-portfolio/index.html",
-    "main.84855d87.css.map": "/react-portfolio/static/css/main.84855d87.css.map",
-    "main.7032f67d.js.map": "/react-portfolio/static/js/main.7032f67d.js.map"
+    "main.6f0bb4c3.css.map": "/react-portfolio/static/css/main.6f0bb4c3.css.map",
+    "main.5b3d040b.js.map": "/react-portfolio/static/js/main.5b3d040b.js.map"
   },
   "entrypoints": [
-    "static/css/main.84855d87.css",
-    "static/js/main.7032f67d.js"
+    "static/css/main.6f0bb4c3.css",
+    "static/js/main.5b3d040b.js"
   ]
 }
