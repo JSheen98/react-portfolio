@@ -4,9 +4,6 @@ import resume from '../assets/jackson-sheen-dev-resume.pdf'
 
 // Styling
 const styles = {
-    body: {
-        marginTop: '130px'
-    },
     card: {
         background: '#5BADBF',
         color: '#B9FAF8',
@@ -114,7 +111,7 @@ const fullStack = {
 // Resume page component
 export default function Resume() {
     return (
-        <section style={styles.body}>
+        <section className="content-container">
             <h1 className="ms-4 mb-4">Resume</h1>
             {/* Downloadable resume link */}
             <p className="ms-4 mb-4" style={styles.text}>Download my resume <a href={resume} style={styles.bold} download="Jackson-Sheen-Resume.pdf">here</a></p>

@@ -9,10 +9,6 @@ import '../styles/Portfolio.css'
 
 // Styling
 const styles = {
-  body: {
-    marginTop: '130px',
-    background: '#5D5E60'
-  },
   card: {
     width: '35rem'
   },
@@ -105,7 +101,7 @@ const socialNetworkApi = {
 // For each project card, we're calling in a different set of properties from the objects above
 export default function Portfolio() {
   return (
-    <section style={styles.body} className="mb-4">
+    <section className='content-container'>
       <h1 className="ms-4 mb-4">Portfolio</h1>
       <div className="d-flex flex-wrap justify-content-around">
       <ProjectCard description={musinion.description} title={musinion.title} image={musinion.image} gitHub={musinion.gitHub} liveSite={musinion.liveSite} alt={musinion.alt} />

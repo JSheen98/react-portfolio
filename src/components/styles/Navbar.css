@@ -1,5 +1,3 @@
-
-
 /* Colors to use throughout */
 :root {
     --moonstone: #5BADBF;
@@ -36,7 +34,7 @@ html {
 nav {
     z-index: 1;
     position: fixed;
-    top: 0;  
+    top: 0;
     width: 100%;
     background-color: var(--moonstone);
 }
@@ -62,6 +60,19 @@ nav {
 /* Hover effect when items are hovered */
 .items:hover {
     color: var(--davysgray);
+}
+
+.footer {
+    position: fixed;
+    background-size: cover;
+    padding: 5px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #5BADBF;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Footer anchor tags */
@@ -98,15 +109,18 @@ nav {
         height: auto;
         text-align: center;
     }
-    .items:nth-child(1){
+
+    .items:nth-child(1) {
         border-top: 1px solid var(--celeste);
         margin-top: 50px;
     }
+
     .items {
         width: 100%;
         border-top: 1px solid var(--celeste);
         padding: 20px 0;
     }
+
     .side-menu {
         display: block;
     }
