@@ -1,5 +1,8 @@
 import React from "react";
+// Import resume pdf
+import resume from '../assets/jackson-sheen-dev-resume.pdf'
 
+// Styling
 const styles = {
     body: {
         marginTop: '130px'
@@ -12,9 +15,17 @@ const styles = {
     cardTitle: {
         fontWeight: 'bold',
         fontSize: '18px'
+    },
+    bold: {
+        fontWeight: 'bold',
+        color: '#5BADBF'
+    },
+    text: {
+        color: '#B9FAF8' 
     }
 }
 
+// SKills card component
 function SkillsCard(props) {
     return (
         <div className="card mb-4 me-4 ms-4" style={styles.card}>
@@ -28,6 +39,7 @@ function SkillsCard(props) {
     )
 }
 
+// Passing in these values as props later
 const soft = {
     title: 'Soft Skills',
     skills: (
@@ -99,11 +111,15 @@ const fullStack = {
     )
 }
 
+// Resume page component
 export default function Resume() {
     return (
         <section style={styles.body}>
             <h1 className="ms-4 mb-4">Resume</h1>
+            {/* Downloadable resume link */}
+            <p className="ms-4 mb-4" style={styles.text}>Download my resume <a href={resume} style={styles.bold} download="Jackson-Sheen-Resume.pdf">here</a></p>
             <div className="d-flex flex-wrap justify-content-around">
+                {/* Call our SkillsCard component with custom props for each card */}
                 <SkillsCard title={soft.title} skills={soft.skills} />
                 <SkillsCard title={frontEnd.title} skills={frontEnd.skills} />
                 <SkillsCard title={backEnd.title} skills={backEnd.skills} />

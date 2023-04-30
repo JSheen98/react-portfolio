@@ -16,6 +16,10 @@
     width: 100%;
 }
 
+.btn:hover {
+    background-color: var(--moonstone);
+}
+
 /* Image styling */
 .img-size {
     width: 100%;

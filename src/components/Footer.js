@@ -11,11 +11,6 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
-  anchors: {
-    textDecoration: 'none',
-    color: '#B9FAF8',
-    fontSize: '25px'
-  },
   style: {
     clear: 'both'
   }
@@ -27,13 +22,13 @@ export default function Footer() {
       <section className="justify-content-center d-flex" style={styles.footer}>
         <ul className="list">
           <li className="items">
-            <a style={styles.anchors} href="https://github.com/JSheen98">GitHub</a>
+            <a className="footer-a" href="https://github.com/JSheen98">GitHub</a>
           </li>
           <li className="items">
-            <a style={styles.anchors} href="https://www.linkedin.com/in/jackson-sheen-1b50a2258/">LinkedIn</a>
+            <a className="footer-a" href="https://www.linkedin.com/in/jackson-sheen-1b50a2258/">LinkedIn</a>
           </li>
           <li className="items">
-            <a style={styles.anchors} href="https://twitter.com/jsheendev">Twitter</a>
+            <a className="footer-a" href="https://twitter.com/jsheendev">Twitter</a>
           </li>
         </ul>
       </section>
