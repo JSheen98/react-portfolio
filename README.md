@@ -80,3 +80,4 @@ The following pictures represent the website's functionality:
 * Created the responsive navbar with the help of this video: https://dev.to/ziratsu/code-a-responsive-navbar-with-react-45le
 * Created hover overlays for projects in my portfolio with the help of: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade
 * Figured out how to add a downloadable link at this stack overflow post https://stackoverflow.com/questions/50694881/how-to-download-file-in-react-js
+* Went over form handling with my tutor, Armando Osorio
