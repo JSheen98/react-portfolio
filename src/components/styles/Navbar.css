@@ -49,6 +49,17 @@ nav {
     color: var(--davysgray);
 }
 
+/* Footer anchor tags */
+.footer-a {
+    color: #B9FAF8;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.footer-a:hover {
+    color: var(--davysgray);
+}
+
 /* Side menu styling (for mobile screens) */
 .side-menu {
     display: none;
