@@ -1,6 +1,7 @@
 import React from "react"
 import './styles/Navbar.css'
 
+// Styling
 const styles = {
   footer: {
     left: '0',
@@ -16,6 +17,7 @@ const styles = {
   }
 }
 
+// Footer component
 export default function Footer() {
   return (
     <div style={styles.style}>

@@ -15,11 +15,7 @@ const styles = {
     profileCard: {
         width: '20rem',
         background: '#5BADBF'
-    },
-    // img: {
-    //     borderRadius: '10%',
-    //     width: '25%'
-    // }
+    }
 }
 
 // Home page component
@@ -54,7 +50,7 @@ export default function Home() {
                             interfaces through work and on coding projects. 
                         </p>
                         <div className="d-flex align-items-center profile">
-                            <img src={profileImg} className="m-4 profile-photo" alt='Jackson Sheen Profile Picture' />
+                            <img src={profileImg} className="m-4 profile-photo" alt='Jackson Sheen' />
                             <p className="card-text">
                                 <strong>When I'm not coding or testing software</strong>,
                                 I'm most likely playing, coaching, or watching the sport
