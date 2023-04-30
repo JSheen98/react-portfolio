@@ -80,11 +80,12 @@ export default function Contact() {
     return (
         <section style={styles.body}>
         <h1 className="ms-4 mb-4">Contact</h1>
-        <form className="ms-4 me-4 mb-4">
+        <form className="ms-4 me-4 mb-4" onSubmit={handleFormSubmit} >
             <div className="form-group">
-                <label for="nameInput">Name</label>
+                <label htmlFor="nameInput">Name</label>
                 <input 
                 type="text"
+                name="nameInput"
                 onChange={handleInputChange}
                 className="form-control" 
                 id="nameInput" 
@@ -97,9 +98,10 @@ export default function Contact() {
                 )}
             </div>
             <div className="form-group mt-4">
-                <label for="emailInput">Email address</label>
+                <label htmlFor="emailInput">Email address</label>
                 <input 
                 type="email" 
+                name="emailInput"
                 onChange={handleInputChange}
                 className="form-control" 
                 id="emailInput" 
@@ -112,8 +114,9 @@ export default function Contact() {
                 )}
             </div>
             <div className="form-group mt-4">
-                <label for="messageInput">Leave a message!</label>
+                <label htmlFor="messageInput">Leave a message!</label>
                 <textarea 
+                name="messageInput"
                 onChange={handleInputChange}
                 className="form-control" 
                 id="messageInput" 
