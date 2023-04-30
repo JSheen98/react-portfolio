@@ -17,6 +17,19 @@ html {
     color: var(--celeste);
 }
 
+/* Styles for the selected current tab */
+.nav-link-active {
+    text-decoration: none;
+    color: var(--davysgray);
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Removes hover effect to the active tab */
+.nav-link-active:hover {
+    color: var(--davysgray);
+}
+
 /* Nav styling */
 nav {
     z-index: 1;
