@@ -70,8 +70,10 @@ export default function Contact() {
             setInvalidMessage('Please enter a message')
             return
         }
+        // Gives valid message if all goes well
         setValidMessage(`Thank you, ${name}. Your message has been sent.`)
 
+        // Should clear the input upon submit
         setName('')
         setEmail('')
         setMessage('')
@@ -80,12 +82,14 @@ export default function Contact() {
     return (
         <section style={styles.body}>
         <h1 className="ms-4 mb-4">Contact</h1>
+        {/* Call submit handler on form */}
         <form className="ms-4 me-4 mb-4" onSubmit={handleFormSubmit} >
             <div className="form-group">
                 <label htmlFor="nameInput">Name</label>
                 <input 
                 type="text"
                 name="nameInput"
+                // On change we want our values to set
                 onChange={handleInputChange}
                 className="form-control" 
                 id="nameInput" 
@@ -131,6 +135,7 @@ export default function Contact() {
             </div>
             <button type="submit" 
             className="btn mt-4" 
+            // when submit is clicked, we want to handle form submission
             onSubmit={handleFormSubmit} 
             style={styles.btn}>Submit</button>
             {validMessage && (
