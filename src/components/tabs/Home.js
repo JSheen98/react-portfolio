@@ -1,5 +1,6 @@
 import React from "react";
 import profileImg from '../assets/images/profile-pic.JPG'
+import '../styles/Portfolio.css'
 // Create styling
 const styles = {
     body: {
@@ -15,10 +16,10 @@ const styles = {
         width: '20rem',
         background: '#5BADBF'
     },
-    img: {
-        borderRadius: '10%',
-        width: '25%'
-    }
+    // img: {
+    //     borderRadius: '10%',
+    //     width: '25%'
+    // }
 }
 
 // Home page component
@@ -52,8 +53,8 @@ export default function Home() {
                             I've spent quite a bit of time with bash and other terminal 
                             interfaces through work and on coding projects. 
                         </p>
-                        <div className="d-flex align-items-center">
-                            <img style={styles.img} src={profileImg} className="m-4" alt='Jackson Sheen Profile Picture' />
+                        <div className="d-flex align-items-center profile">
+                            <img src={profileImg} className="m-4 profile-photo" alt='Jackson Sheen Profile Picture' />
                             <p className="card-text">
                                 <strong>When I'm not coding or testing software</strong>,
                                 I'm most likely playing, coaching, or watching the sport
