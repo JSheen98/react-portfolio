@@ -1,12 +1,10 @@
 import React, { useState } from "react"
 // Import email validation function
 import { emailValidation } from "../../utils/helpers"
+import '../styles/Portfolio.css'
 
 // Styling
 const styles = {
-    body: {
-        marginTop: '130px'
-    },
     btn: {
         background: '#B9FAF8',
         color: '#5D5E60'
@@ -80,7 +78,7 @@ export default function Contact() {
     }
 
     return (
-        <section style={styles.body}>
+        <section className="content-container">
         <h1 className="ms-4 mb-4">Contact</h1>
         {/* Call submit handler on form */}
         <form className="ms-4 me-4 mb-4" onSubmit={handleFormSubmit} >

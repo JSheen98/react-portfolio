@@ -3,10 +3,6 @@ import profileImg from '../assets/images/profile-pic.JPG'
 import '../styles/Portfolio.css'
 // Create styling
 const styles = {
-    body: {
-        marginTop: '130px',
-        background: '#5D5E60'
-    },
     card: {
         width: '70rem',
         background: '#5BADBF',
@@ -22,7 +18,7 @@ const styles = {
 export default function Home() {
     return (
         // Use the body style created above
-        <section style={styles.body}>
+        <section className='content-container'>
             <h1 className="ms-4 mb-4">Home</h1>
             <div className="d-flex justify-content-center">
                 {/* Use the card style created above */}
@@ -30,19 +26,20 @@ export default function Home() {
                     <div className="card-body">
                         <h5 className="card-title">About me</h5>
                         <p className="card-text">
-                            My name is Jackson Sheen, and I live in Logan, Utah.
+                            <strong>My name is Jackson Sheen</strong>, and I live in Logan, Utah.
                             I'm a Fullstack Web Developer, and a Software Quality
                             Analyst. I've been testing software at iFIT for about
                             three years now. During my time here, I've earned a 
                             certificate through ISTQB for software testing. I've
-                            also got a certificate through the University of Utah
+                            also earned a certificate through the University of Utah
                             Fullstack Coding Bootcamp. Before I got into the software field,
                             I worked in construction as a window installer, and then
                             as an electrician. 
                         </p>
                         <p className="card-text">
-                            Right now my goal is to keep expanding my knowledge and skill-set in web development,
-                            and start to learn more about app development. Besides,
+                            Right now <strong> my goal is to keep expanding my 
+                            knowledge and skill-set in web development,and start
+                            to learn more about app development</strong>. Besides,
                             Javascript and related web frameworks and technologies,
                             I've worked with Python and Kotlin (and Jetpack Compose), 
                             and I plan to learn even more about those languages.

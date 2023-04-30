@@ -3,15 +3,6 @@ import './styles/Navbar.css'
 
 // Styling
 const styles = {
-  footer: {
-    left: '0',
-    bottom: '0',
-    width: '100%',
-    background: '#5BADBF',
-    textAlign: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
   style: {
     clear: 'both'
   }
@@ -20,7 +11,7 @@ const styles = {
 // Footer component
 export default function Footer() {
   return (
-    <div style={styles.style}>
+    <div className="footer">
       <section className="justify-content-center d-flex" style={styles.footer}>
         <ul className="list">
           <li className="items">

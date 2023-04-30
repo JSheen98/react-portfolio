@@ -99,6 +99,12 @@
     width: 25%;
 }
 
+.content-container {
+    margin-top: 130px;
+    margin-bottom: 80px;
+    background: var(--davysgray);
+}
+
 /* Removes the overlay on smaller screen sizes */
 @media screen and (max-width: 1200px) {
     .title,
@@ -114,5 +120,9 @@
 
     .profile-photo {
         width: 50%;
+    }
+
+    .content-container {
+        margin-bottom: 320px;
     }
 }
