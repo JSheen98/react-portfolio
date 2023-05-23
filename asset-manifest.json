@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.19eeb214.css",
-    "main.js": "/react-portfolio/static/js/main.1fa0bf9d.js",
+    "main.js": "/react-portfolio/static/js/main.898e72e6.js",
     "static/media/musinion-home-2.png": "/react-portfolio/static/media/musinion-home-2.709d7287c1a9208ad03c.png",
     "static/media/weather-dashboard-ex.png": "/react-portfolio/static/media/weather-dashboard-ex.394e8c19aa0a9c8a6e62.png",
     "static/media/movie-recommender-ss.jpg": "/react-portfolio/static/media/movie-recommender-ss.1abc609369af5efafbe7.jpg",
     "static/media/profile-pic.JPG": "/react-portfolio/static/media/profile-pic.892772eb560c1b7e50fd.JPG",
     "static/media/social-network-api.png": "/react-portfolio/static/media/social-network-api.449e5cc21c13efce4bac.png",
-    "static/media/jackson-sheen-dev-resume.pdf": "/react-portfolio/static/media/jackson-sheen-dev-resume.0ca29fa5c97951bae55f.pdf",
     "static/media/home-screen.png": "/react-portfolio/static/media/home-screen.229e2b3ed2da1e797a23.png",
     "static/media/svg-logo-generator.png": "/react-portfolio/static/media/svg-logo-generator.0b81d0bd751450fc39e6.png",
     "index.html": "/react-portfolio/index.html",
     "main.19eeb214.css.map": "/react-portfolio/static/css/main.19eeb214.css.map",
-    "main.1fa0bf9d.js.map": "/react-portfolio/static/js/main.1fa0bf9d.js.map"
+    "main.898e72e6.js.map": "/react-portfolio/static/js/main.898e72e6.js.map"
   },
   "entrypoints": [
     "static/css/main.19eeb214.css",
-    "static/js/main.1fa0bf9d.js"
+    "static/js/main.898e72e6.js"
   ]
 }
