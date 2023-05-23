@@ -46,7 +46,7 @@ function ProjectCard(props) {
 // Objects to pass into the Component's props below
 const musinion = {
   title: 'Musinion',
-  description: "This team project is a full stack website for creating personal album reviews, as well as viewing and responding to other user's reviews.",
+  description: "This team project is a full stack website for creating personal album reviews, as well as viewing and responding to other user's reviews. Built with JavaScript, using Handlebars, MySQL, and Express.",
   image: musinionImg,
   gitHub: 'https://github.com/Teaom/Musinion',
   liveSite: 'https://musinion.herokuapp.com/',
@@ -55,7 +55,7 @@ const musinion = {
 
 const techBlog = {
   title: 'Tech Blog 🤖',
-  description: "This web app features a full stack tech blog, with login and sign up as well as the ability to read, write, update and delete blog posts and comments.",
+  description: "This web app features a full stack tech blog, with login and sign up as well as the ability to read, write, update and delete blog posts and comments. Built with JavaScript using Handlebars, MySQL, and Express.",
   image: techBlogImg,
   gitHub: 'https://github.com/JSheen98/tech-blog',
   liveSite: 'https://safe-ridge-72471.herokuapp.com/',
@@ -64,7 +64,7 @@ const techBlog = {
 
 const weatherDashboard = {
   title: 'Weather Dashboard',
-  description: 'This front end application features a dashboard that allows the user to search for a location (using the Open Weather API), and the weather for the next 5 days is returned. Previous searches are also persisted via local storage and can be reused.',
+  description: 'This front end application features a dashboard that allows the user to search for a location (using the Open Weather API), and the weather for the next 5 days is returned. Previous searches are also persisted via local storage and can be reused. Built with JavaScript, HTML, and CSS using jQuery.',
   image: weatherDashboardImg,
   gitHub: 'https://github.com/JSheen98/weather-dashboard',
   liveSite: 'https://jsheen98.github.io/weather-dashboard/',
@@ -73,7 +73,7 @@ const weatherDashboard = {
 
 const movieRecommender = {
   title: '🎞️ Movie Recommender',
-  description: 'This website is a team project that features a frontend movie dashboard that allows a user to search and filter for movies using the TMDb API, then a user can search for nearby theaters using the Google Maps API.',
+  description: 'This website is a team project that features a frontend movie dashboard that allows a user to search and filter for movies using the TMDb API, then a user can search for nearby theaters using the Google Maps API. Built with JavaScript, HTML, and CSS using Bulma CSS.',
   image: movieRecommenderImg,
   gitHub: 'https://github.com/JSheen98/coding-bootcamp-project1-movie-recommender',
   liveSite: 'https://jsheen98.github.io/coding-bootcamp-project1-movie-recommender/',
@@ -82,7 +82,7 @@ const movieRecommender = {
 
 const svgGenerator = {
   title: 'SVG Logo Generator',
-  description: "This backend application features a simple SVG logo generator. It uses the inquirer npm package to get user input, and generates a logo based on those values.",
+  description: "This backend application features a simple SVG logo generator. It uses the inquirer npm package to get user input, and generates a logo based on those values. Built with JavaScript using Node.js, Inquirer module, and Jest.",
   image: svgGeneratorImg,
   gitHub: 'https://github.com/JSheen98/svg-logo-maker',
   liveSite: 'https://github.com/JSheen98/svg-logo-maker',
@@ -91,7 +91,7 @@ const svgGenerator = {
 
 const socialNetworkApi = {
   title: 'Social Network API',
-  description: "This backend is a backend API, that uses NoSQL. It features several models, and references between them, to create a flexible database for a Social Network App.",
+  description: "This backend is a backend API, that uses NoSQL. It features several models, and references between them, to create a flexible database for a Social Network App. Built with JavaScript using MongoDB and Mongoose (ODM).",
   image: socialNetworkApiImg,
   gitHub: 'https://github.com/JSheen98/social-network-api',
   liveSite: 'https://github.com/JSheen98/social-network-api',

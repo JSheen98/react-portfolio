@@ -1,6 +1,6 @@
-import React from "react";
-// Import resume pdf
-import resume from '../assets/jackson-sheen-dev-resume.pdf'
+import React from "react"
+// import resume from '../assets/jackson-sheen-dev-resume.pdf'
+
 
 // Styling
 const styles = {
@@ -59,7 +59,7 @@ const soft = {
 }
 
 const frontEnd = {
-    title: 'Front-end Proficiencies',
+    title: 'Front-end',
     skills: (
         <ul>
             <li>React</li>
@@ -77,7 +77,7 @@ const frontEnd = {
 }
 
 const backEnd = {
-    title: 'Back-end Proficiencies',
+    title: 'Back-end',
     skills: (
         <ul>
             <li>MySQL</li>
@@ -92,7 +92,7 @@ const backEnd = {
 }
 
 const fullStack = {
-    title: 'Fullstack Proficiencies',
+    title: 'Fullstack',
     skills: (
         <ul>
             <li>JavaScript</li>
@@ -114,7 +114,7 @@ export default function Resume() {
         <section className="content-container">
             <h1 className="ms-4 mb-4">Resume</h1>
             {/* Downloadable resume link */}
-            <p className="ms-4 mb-4" style={styles.text}>Download my resume <a href={resume} style={styles.bold} download="Jackson-Sheen-Resume.pdf">here</a></p>
+            <p className="ms-4 mb-4" style={styles.text}>View my resume <a href="https://docs.google.com/document/d/1UvL0XOhwKurGKctX6epDMsQPufpM-mCxXHc-sZnbS8U/edit" style={styles.bold} download="Jackson-Sheen-Resume.pdf">here</a></p>
             <div className="d-flex flex-wrap justify-content-around">
                 {/* Call our SkillsCard component with custom props for each card */}
                 <SkillsCard title={soft.title} skills={soft.skills} />
