@@ -1,5 +1,6 @@
 import React from "react";
-import techBlogImg from '../assets/images/home-screen.png'
+// import techBlogImg from '../assets/images/home-screen.png'
+import matchPointImage from '../assets/images/match-point-home.png'
 import musinionImg from '../assets/images/musinion-home-2.png'
 import weatherDashboardImg from '../assets/images/weather-dashboard-ex.png'
 import movieRecommenderImg from '../assets/images/movie-recommender-ss.jpg'
@@ -18,6 +19,9 @@ const styles = {
   },
   cardFooter: {
     backgroundColor: '#5BADBF'
+  }, 
+  img: {
+    objectPosition: 'top center'
   }
 }
 
@@ -53,14 +57,23 @@ const musinion = {
   alt: 'Musinion website preview'
 }
 
-const techBlog = {
-  title: 'Tech Blog 🤖',
-  description: "This web app features a full stack tech blog, with login and sign up as well as the ability to read, write, update and delete blog posts and comments. Built with JavaScript using Handlebars, MySQL, and Express.",
-  image: techBlogImg,
-  gitHub: 'https://github.com/JSheen98/tech-blog',
-  liveSite: 'https://safe-ridge-72471.herokuapp.com/',
-  alt: 'Tech Blog website preview'
+const matchPoint = {
+  title: 'Match Point',
+  description: "This full stack web app was a group project, built using MERN stack. It features event and team creation, for users to connect and join local sports or pick up games. It's basically a social networking app for people who love sports!",
+  image: matchPointImage,
+  gitHub: 'https://github.com/JSheen98/match-point',
+  liveSite: 'https://pure-spire-26458.herokuapp.com/',
+  alt: 'Match Point website preview'
 }
+
+// const techBlog = {
+//   title: 'Tech Blog 🤖',
+//   description: "This web app features a full stack tech blog, with login and sign up as well as the ability to read, write, update and delete blog posts and comments. Built with JavaScript using Handlebars, MySQL, and Express.",
+//   image: techBlogImg,
+//   gitHub: 'https://github.com/JSheen98/tech-blog',
+//   liveSite: 'https://safe-ridge-72471.herokuapp.com/',
+//   alt: 'Tech Blog website preview'
+// }
 
 const weatherDashboard = {
   title: 'Weather Dashboard',
@@ -105,7 +118,7 @@ export default function Portfolio() {
       <h1 className="ms-4 mb-4">Portfolio</h1>
       <div className="d-flex flex-wrap justify-content-around">
       <ProjectCard description={musinion.description} title={musinion.title} image={musinion.image} gitHub={musinion.gitHub} liveSite={musinion.liveSite} alt={musinion.alt} />
-      <ProjectCard description={techBlog.description} title={techBlog.title} image={techBlog.image} gitHub={techBlog.gitHub} liveSite={techBlog.liveSite} alt={techBlog.alt} />
+      <ProjectCard description={matchPoint.description} title={matchPoint.title} image={matchPoint.image} gitHub={matchPoint.gitHub} liveSite={matchPoint.liveSite} alt={matchPoint.alt} />
       <ProjectCard description={weatherDashboard.description} title={weatherDashboard.title} image={weatherDashboard.image} gitHub={weatherDashboard.gitHub} liveSite={weatherDashboard.liveSite} alt={weatherDashboard.alt}/>
       <ProjectCard description={movieRecommender.description} title={movieRecommender.title} image={movieRecommender.image} gitHub={movieRecommender.gitHub} liveSite={movieRecommender.liveSite} alt={movieRecommender.alt} />
       <ProjectCard description={svgGenerator.description} title={svgGenerator.title} image={svgGenerator.image} gitHub={svgGenerator.gitHub} liveSite={svgGenerator.liveSite} alt={svgGenerator.alt} />
